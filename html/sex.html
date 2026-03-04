@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changeBackgroundColor() {
+            const colors = ['#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33F3'];
+            document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Batman Fan Page</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Batman</h2>
+            <p>Batman is a fictional superhero appearing in American comic books published by DC Comics. Created by artist Bob Kane and writer Bill Finger, he first appeared in Detective Comics #27 in 1939.</p>
+        </section>
+        <section>
+            <h2>Gallery</h2>
+            <img src="https://example.com/batman1.jpg" alt="Batman Image 1" width="300">
+            <img src="https://example.com/batman2.jpg" alt="Batman Image 2" width="300">
+            <img src="https://example.com/batman3.jpg" alt="Batman Image 3" width="300">
+        </section>
+        <section>
+            <h2>Change Background Color</h2>
+            <button onclick="changeBackgroundColor()">Change Background Color</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Batman Fan Page</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+    /*element selector*/
+    .red{
+        color: red;
+    }
+    /*id selector*/
+    #green{
+        color: green;
+    }
+    div>p{
+        color: violet;
+    }
+    *{
+        margin: 0 ;
+        padding: 0 ;
+    }
+    /*pseudo selectors*/
+    a:visited{
+        color: yellow;
+    }
+    a:link{
+        color: blue;
+    }
+    a:active{
+        color: red;
+    }
+    a:hover{
+        color: green;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="red">
+        hii i am div
+        <p>hi i am a paragraph</p>
+    </div>
+    <span id="green">
+        hii i am span
+    </span>
+    <br>
+    <a href="https://www.google.com">google</a>
+    <br>
+    <a href="https://www.facebook.com">facebook</a>
+</body>
+</html>

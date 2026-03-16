@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+ :root{
+        --color:pink;
+        --seccolor:gray;
+        --defpad:12px;
+    }
+
+div:first-child{
+    background-color:var(--seccolor);
+}
+    .container{
+         background-color: var(--color);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        display:flex;
+    }
+    ul li{
+        padding: 21px;
+        border:2px solid var(--color)
+    }
+
+    ul li:first-child{
+        background-color:red;
+    }
+   
+    </style>
+    
+</head>
+<body>
+    <div>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum cumque voluptas rem non quo numquam beatae. Laboriosam quas maxime praesentium, cupiditate accusamus eos.</div>
+</body>
+</html>

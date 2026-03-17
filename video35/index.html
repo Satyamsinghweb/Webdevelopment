@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .boxes *{
+        color: red;
+        background-color:white;
+        border: 2px solid rgb(5, 0, 0);
+    }
+   .box, [data-color="primary"]{
+        padding-top: 45px;
+    }
+    .box:nth-child(odd){
+        background-color:lightblue;
+    }
+    .boxes::before{
+        content:"hii I am Satyam";
+        color:black;
+    }
+    .boxes::after{
+        content:"Byy BabyGirl";
+        color:black;
+    }
+    ::selection{
+        color:rebeccapurple;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="boxes">
+        <div  data-color="primary" class="box">hii i am box</div>
+        <div class="box">hii i am box</div>
+        <div class="box">hii i am box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.containers{
+    border: 2px solid red;
+    display:flex;
+    /* justify-content:center; */
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+     flex-wrap: wrap;
+    align-content: flex-start;
+/* there is no justify items in flex box */
+    flex-flow: row wrap;
+    /* gap: 12px 10px; */
+    row-gap: 10px;
+    column-gap:10px ;
+    
+}
+.items{
+    height:56px;
+    width:56px;
+    background-color: purple;
+    border:2px solid black;
+    /* margin: 4px; */
+
+}
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+    }
+    .order-3{
+        order: 3;
+    }
+    .order-4{
+        order: 4;
+    }
+    .items2{
+        flex-grow:2;
+        /* flex-shrink: 2; */
+        /* 2x speed se shrink hoga */
+    }
+</style>
+<body>
+    <main>
+        <div class="containers">
+        <div class="items items2">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+    </main>
+</body>
+</html>

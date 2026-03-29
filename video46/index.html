@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 30vw;
+        height: 80vh;
+        background-color: greenyellow
+    }
+.box{
+    width:34px ;
+    height: 45px ;
+    background-color: aqua;
+    animation-name: satyamkaanimation;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+}
+@keyframes satyamkaanimation{
+    from{
+
+    }
+    to{
+        transform: translateX(1000px);
+    }
+}
+</style>
+<body>
+      <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>
